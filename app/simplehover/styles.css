@@ -1,0 +1,15 @@
+.box-inner {
+    height: 56px;
+    width: 56px;
+    background: #fad655;
+    border-radius: 50%;
+    transition: transform 100ms ease
+}
+
+.box {
+    border: 2px solid black;
+}
+
+.box:hover .box-inner{
+    transform: translateY(-20%);
+}
