@@ -1,0 +1,37 @@
+.button {
+    position: relative;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 9999px;
+    background-color: #f6f5f5;
+    padding-inline: 24px;
+    font-weight: 500;
+    color: #21201c;
+}
+
+
+.hold-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background-color: #ffdbdc;
+    color: #e5484d;
+
+    clip-path: inset(0% 100% 0% 0%);
+    transition: clip-path 0.2s ease-out;
+}
+
+.button:active .hold-overlay {
+    clip-path: inset(0px 0px 0px 0px);
+    transition: clip-path 1s linear;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
